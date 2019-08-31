@@ -1,0 +1,273 @@
+*{
+     box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container::after  {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+/* -------------------------- header -------------------------- */
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding-top: 45px;
+    background-color: #4b736d;
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFF;
+}
+
+.logo {
+    float: left;
+    width: 270px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #FFF;
+}
+
+.logo-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navigation {
+    float: right;
+    width: 870px;
+    padding-top: 15px;
+    font-size: 22px;
+    color: #FFF;
+    text-align: right;
+}
+
+.navigation-link {
+    display: inline-block;
+    margin-right: 50px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navigation-link:last-child {
+    margin-right: 0;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+.header-content {
+    width: 1170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header-scroll {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header-scroll-text {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+/* -------------------------- section content -------------------------- */
+
+.section-content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.content-row {
+    margin-bottom: 120px;
+}
+
+.content-row:last-child {
+    margin-bottom: 0;
+}
+
+.content-row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.content-description {
+    width: 470px;
+}
+
+.content-title {
+    font-size: 54px;
+    color: #31405b;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.content-text {
+    margin-bottom: 40px;
+}
+
+.content-img {
+    width: 570px;
+}
+
+.content-text p {
+    color: #31405b;
+    font-size: 20px;
+    line-height: 1.6; 
+}
+
+.content-text a {
+    color: #138ece;
+}
+
+.button {
+    background-color: #0ac883;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50px; 
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+    transition: background-color 0.2s ease-in;
+}
+
+.button:hover {
+    background-color: #06e492;
+}
+
+/* -------------------------- Footer -------------------------- */
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #265847;
+    color: #FFF;
+}
+
+.footer-left {
+    width: 270px;
+    float: left;
+}
+
+.footer-right {
+    max-width: 870px;
+    float: right;
+}
+
+.footer-right::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.footer-about {
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+.footer-col {
+    font-size: 18px;
+    float: left;
+    margin-right: 30px;
+}
+
+.footer-col:last-child {
+    margin-right: 0;
+}
+
+.footer-col-info {
+    width: 200px;
+}
+
+.footer-col-services {
+    width: 240px;
+}
+
+.footer-col-contacts {
+    width: 200px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.footer-list-item {
+    margin-bottom: 10px;
+}
+
+.footer-list-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-list-link:hover {
+    text-decoration: underline;
+}
